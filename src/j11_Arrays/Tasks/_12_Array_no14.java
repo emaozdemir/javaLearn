@@ -52,14 +52,39 @@ public class _12_Array_no14 {
         int yIndex=Arrays.binarySearch(intArr,y);
         System.out.println("xIndex = " + xIndex);
         System.out.println("yIndex = " + yIndex);
-        if (xIndex>=0&&yIndex>=0){
+        if (xIndex>=0&&yIndex>=0){ // burda 0 dan buyukluğu 1 veya
             System.out.println(false);
         } else {
             System.out.println(true);
         }
 
-
-
-
     }
+    /*
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Diziyi giriniz (örn. 1 2 3 4):");
+        String str = scan.nextLine();
+        String[] strArr = str.split(" ");
+        int[] intArr = new int[strArr.length];
+
+        for (int i = 0; i < strArr.length; i++) {
+            intArr[i] = Integer.parseInt(strArr[i]);
+        }
+
+        boolean result = no14(intArr);
+        System.out.println("Sonuç: " + result);
+    }
+
+    public static boolean no14(int[] nums) {
+        int x = 1;
+        int y = 4;
+
+        Arrays.sort(nums);
+        int xIndex = Arrays.binarySearch(nums, x);
+        int yIndex = Arrays.binarySearch(nums, y);
+
+        return (xIndex >= 0 && yIndex >= 0) ? false : true;
+    }
+}
+     */
 }

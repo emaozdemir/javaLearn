@@ -10,6 +10,12 @@ public class _10_reverse_String {
         Cevap böyle olmalı :  "dlroW olleH"
         Trick-> String split ile arraya atanmalı
          */
+        String str = "Hello World";
+        String[] strArr= str.split("");
+
+        for (int i = strArr.length - 1; i >= 0; i--) {
+            System.out.print(strArr[i]);
+        }
 
 
     }
