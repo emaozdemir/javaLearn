@@ -9,9 +9,20 @@ public class _07_array_max_value {
             En büyük değeri yazdırınız.
          */
 
-        // code start here
+        int[] arr = {12, 2, 5, 15, 8};
 
+        System.out.println(max(arr));
 
+    }
+
+    private static int max(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
     }
 }
 

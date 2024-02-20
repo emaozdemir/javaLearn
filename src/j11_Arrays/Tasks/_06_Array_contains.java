@@ -10,8 +10,17 @@ public class _06_Array_contains {
         Eğer aitse "true" çevirin.
         Loops (döngüler) kullanın.
          */
+        String [] arr= {"Apple","Orange","Banana","Pineapple"};
+        boolean containsApple = false;
+        //for ile;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals("Apple")){
+                containsApple = true;
+            }
+        }
+        System.out.println(containsApple);
 
-        //Kodu aşağıya yazınız..
+
 
 
     }

@@ -11,7 +11,7 @@ public class C02_Varargs_Array {
         toplam(arr);
     }
 
-    private static void toplam(int ... i) {
+    public static void toplam(int... i) {
         int toplam=0;
         for (int each:i){
             toplam+=each;
