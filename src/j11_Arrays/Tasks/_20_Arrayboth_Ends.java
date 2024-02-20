@@ -1,5 +1,7 @@
 package j11_Arrays.Tasks;
 
+import java.util.Arrays;
+
 public class _20_Arrayboth_Ends {
 
     public static void main(String[] args) {
@@ -13,6 +15,11 @@ public class _20_Arrayboth_Ends {
     Sonuç bu şekilde olmalıdır. [1, 4]
       */
         //Kodu aşağıya yazınız..
+        int[] arr = {1, 2, 3, 4};
+        int[] newArr = new int[2];
+        newArr[0] = arr[0];
+        newArr[1] = arr[arr.length - 1];
+        System.out.println(Arrays.toString(newArr));
 
 
     }
