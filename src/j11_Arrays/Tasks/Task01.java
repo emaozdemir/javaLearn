@@ -31,6 +31,7 @@ public class Task01 {
         }
 
         System.out.println("Sıralanmış dizi: " + Arrays.toString(arr)); // sıralanmış diziyi ekrana yazdırmak için
+        System.out.println("sema");
 
       /*  int[] yeniarr = new int[arr.length];
        // int yeniSiralama = 0;
