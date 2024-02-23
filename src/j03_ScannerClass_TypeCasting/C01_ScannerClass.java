@@ -21,6 +21,8 @@ public class C01_ScannerClass {
          //1.adım-> Scanner class'dan obj create edilir.'
          Scanner scan = new Scanner(System.in);
 
+
+
          //2. adım-> kulanıcının girdigi veri data
          System.out.print("Alanını istediğiniz bir karenin bir kenarını giriniz :");
 
@@ -48,6 +50,9 @@ public class C01_ScannerClass {
          System.out.println("her bardağa attığınız seker sayısını giriniz:");
          int seker = scan.nextInt();
          System.out.println("1 yılda kullanılan seker sayisi= "+((cay*seker*1.7*365)/1000) +"kg seker kullanıyorsunuz.");
+
+         System.out.println("1 karakter girin");
+         char karakter = scan.next().charAt(0);
 
 
 

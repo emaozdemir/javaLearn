@@ -19,6 +19,22 @@ public class _01_arraylist1 {
          */
 
     public static void main(String[] args) {
+        ArrayList<String> meyveler = new ArrayList<>(Arrays.asList("Orange", "Kiwi", "Peach", "Banana", "Orange"));
+        String str = "Orange";
+        getCount(meyveler, str);
+        System.out.println(getCount(meyveler, str));
+
+
+    }
+
+    public static int getCount(ArrayList<String> arrayList, String str) {
+        int count = 0;
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i).equals(str)) {
+                count++;
+            }
+        }
+        return count;
 
 
     }
