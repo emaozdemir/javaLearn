@@ -15,7 +15,8 @@ public class _09_array_second_max {
         int[] arr = {15, 25, 22, 18, 30};
         //1.yol:
         Arrays.sort(arr);
-        System.out.println(arr[1]);
+        System.out.println(Arrays.toString(arr));
+        System.out.println(arr[arr.length - 2]);
 
 
 

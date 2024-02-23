@@ -15,6 +15,26 @@ public class _21_Array_reverse {
 
         //Kodu aşağıya yazınız.
         int sayi = 123;
+
+        int count = 0;
+        for (int i = sayi; i >= 0; i--) {
+            i = i / 10;
+            count++;
+
+        }
+        System.out.println(count);
+        String str = "";
+        int[] arr = new int[count];
+        for (int i = 0; i < count; i++) {
+            arr[i] = sayi % 10;
+            sayi = sayi / 10;
+            str += arr[i];
+        }
+        System.out.println((str).getClass());
+        Integer a = Integer.parseInt(str);
+        // int a=Integer.parseInt(str);
+        System.out.println(a.getClass());//getclası Integer yaparak cagırabildik.
+
  /*int yeniSayı=0;
  for (int i = sayi; i > 0; i /= 10) {
      yeniSayı = yeniSayı * 10 + i % 10;
@@ -23,13 +43,8 @@ public class _21_Array_reverse {
  */
 
 
-        String str = String.valueOf(sayi);
-        String arr[] = {str};
-        System.out.println("Arrays.toString(arr) = " + Arrays.toString(str.toCharArray()));
-        for (int i = str.length() - 1; i >= 0; i--) {
-            System.out.print(str.charAt(i));
 
-        }
+
 
 
     }

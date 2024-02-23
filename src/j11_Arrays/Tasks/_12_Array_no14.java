@@ -27,7 +27,8 @@ public class _12_Array_no14 {
 
         String str1 = scan.nextLine();
 
-        String[] arr1 = str1.split(" ");
+        String[] arr1 = str1.split("");
+        System.out.println(Arrays.toString(arr1));
 
         int[] intArr = new int[arr1.length];
 

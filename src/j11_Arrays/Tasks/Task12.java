@@ -1,5 +1,7 @@
 package j11_Arrays.Tasks;
 
+import java.util.Arrays;
+
 public class Task12 {
 
     public static void main(String[] args) {
@@ -10,6 +12,11 @@ public class Task12 {
         output:{4,36,16,25,64,81}
         */
         int arr[] = {2, 6, 4, 5, 8, 9};
+        int[] kareArr = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            kareArr[i] = arr[i] * arr[i];
+        }
+        System.out.println(Arrays.toString(kareArr));
 
 
 

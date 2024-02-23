@@ -18,6 +18,7 @@ public class _05_Array_with_for_if {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0) {
                 toplam += arr[i];
+                System.out.print(arr[i] + " ");
             } else if (arr[i] % 2 != 0) {
                 toplam -= arr[i];
             }
