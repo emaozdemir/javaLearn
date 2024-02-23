@@ -15,6 +15,7 @@ public class _21_Array_reverse {
 
         //Kodu aşağıya yazınız.
         int sayi = 123;
+
         int count = 0;
         for (int i = sayi; i >= 0; i--) {
             i = i / 10;
@@ -33,6 +34,17 @@ public class _21_Array_reverse {
         Integer a = Integer.parseInt(str);
         // int a=Integer.parseInt(str);
         System.out.println(a.getClass());//getclası Integer yaparak cagırabildik.
+
+ /*int yeniSayı=0;
+ for (int i = sayi; i > 0; i /= 10) {
+     yeniSayı = yeniSayı * 10 + i % 10;
+ }
+ System.out.println("yeniSayı = " + yeniSayı);
+ */
+
+
+
+
 
 
     }

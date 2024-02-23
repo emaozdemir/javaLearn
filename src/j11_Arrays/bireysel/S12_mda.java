@@ -2,6 +2,7 @@ package j11_Arrays.bireysel;
 
 public class S12_mda {
     public static void main(String[] args) {
+
         //1.soru->verilen 2 katlı arrayde bulunan cift sayilari toplayip,
         //sonucu yazdıran method create ediniz.
         int [][] arr ={{3,5,6},{1,8,2,3,4,2},{1,8,0,4}};
@@ -21,6 +22,12 @@ public class S12_mda {
         }
         return carpim;
 
+
+        //verilen 2 katlı arrayde bulunan cift sayilari toplayip,
+        //sonucu yazdıran method create ediniz.
+      //  int [][] arr ={{3,5,6},{1,8,2,3,4,2},{1,8,9,4}};
+      //  ciftToplam(arr);
+
     }
 
     private static void ciftToplam(int[][] arr) {
@@ -35,7 +42,6 @@ public class S12_mda {
             System.out.println();
         }
         System.out.println("toplamları "+toplam);
-
 
     }
 }
