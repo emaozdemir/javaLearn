@@ -2,6 +2,7 @@ package j12_ArrayList.Tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class _03_arraylist3 {
 
@@ -19,8 +20,24 @@ public class _03_arraylist3 {
         cevap: 10 ,  8 , 4 , 7 , 6 olmalı
      */
 
-    public static void main(String[] args) {
+ /*   public static void main(String[] args) {
+        List<String> str = new ArrayList<>(Arrays.asList("New jersey" ,"New york" , "Ohio" , "Florida" , "Boston"));
+        System.out.println(str);
+        getLength(str);
+
+    }
+
+    private static ArrayList<Integer> getLength(List<String> arrList) {
+        ArrayList<Integer> length = new ArrayList<>();
+
+        for (int i = 0; i <arrList.size() ; i++) {
+
+        }
 
 
     }
+
+  */
+
+
 }

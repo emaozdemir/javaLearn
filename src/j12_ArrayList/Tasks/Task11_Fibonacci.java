@@ -11,8 +11,26 @@ public class Task11_Fibonacci {
     */
     public static void main(String[] args) {
 
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Lütfen bir tam sayi giriniz: ");
+        int girilenSayi= scan.nextInt();
+        List<Integer> fibbonacciListesi = new ArrayList<>();//[]
 
-
+        if (girilenSayi <= 0) {
+            System.out.println("sayi pozitif olmadiğindan bos bir liste döndürüyorum");
+        } else if (girilenSayi==1) {
+            fibbonacciListesi.add(0);
+        } else if (girilenSayi==2) {
+            fibbonacciListesi.add(0);
+            fibbonacciListesi.add(1);
+        }else{
+            fibbonacciListesi.add(0);
+            fibbonacciListesi.add(1);
+            for (int i = 2; i <girilenSayi ; i++) {
+                fibbonacciListesi.add(fibbonacciListesi.get(i-2)+fibbonacciListesi.get(i-1));
+            }
+        }
+        System.out.println(fibbonacciListesi);
 
 
     }

@@ -21,8 +21,8 @@ public class _01_arraylist1 {
     public static void main(String[] args) {
         ArrayList<String> meyveler = new ArrayList<>(Arrays.asList("Orange", "Kiwi", "Peach", "Banana", "Orange"));
         String str = "Orange";
-        getCount(meyveler, str);
-        System.out.println(getCount(meyveler, str));
+        int count = getCount(meyveler, str);
+        System.out.println(count+ " kez tekrarlanmaktadir..");
 
 
     }
