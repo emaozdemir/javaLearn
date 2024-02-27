@@ -1,6 +1,8 @@
 package j12_ArrayList.Tasks;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class _09_2dArray_with_arraylis {
 
@@ -19,6 +21,15 @@ public class _09_2dArray_with_arraylis {
      */
 
     public static void main(String[] args) {
+        int[][] multiArr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < multiArr.length; i++) {
+            for (int j = 0; j < multiArr[i].length; j++) {
+                list.add(multiArr[i][j]);
+            }
+        }
+        System.out.println(list);
 
 
     }

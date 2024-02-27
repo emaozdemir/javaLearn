@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class S06_asal {
     public static void main(String[] args) {
         // kullanıcıdan sayı al asal olup olmadıgını kontrol et sonucu yaazdır.(1 ve kendisine bölünür)
-      /*  Scanner sc= new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
         System.out.println("lütfen sayı giriniz: ");
         int sayi=sc.nextInt();
 
@@ -18,6 +18,7 @@ public class S06_asal {
                 break;
             }
         }
+        /*
         */
         System.out.println(((10>7) ? (10<10 ? 14:30):""));
 

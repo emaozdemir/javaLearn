@@ -2,6 +2,7 @@ package j12_ArrayList.Tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class _05_arraylist5 {
@@ -18,8 +19,12 @@ public class _05_arraylist5 {
     public static void main(String[] args) {
         List<String> ulkeler = new ArrayList<>(Arrays.asList("New jersey", "New york", "Atlanta", "Florida", "Ohio"));
         System.out.println(ulkeler);
-        rotateList(ulkeler);
-        System.out.println("rotateList(ulkeler) = " + rotateList(ulkeler));
+      //  rotateList(ulkeler);
+        System.out.println("rotateList(ulkeler) = " + rotateList(ulkeler));//[Ohio, Florida, Atlanta, New york, New jersey]
+
+        //2.yol
+        Collections.reverse(ulkeler);
+        System.out.println(ulkeler);
 
 
     }

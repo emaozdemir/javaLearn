@@ -20,24 +20,32 @@ public class _03_arraylist3 {
         cevap: 10 ,  8 , 4 , 7 , 6 olmalı
      */
 
- /*   public static void main(String[] args) {
-        List<String> str = new ArrayList<>(Arrays.asList("New jersey" ,"New york" , "Ohio" , "Florida" , "Boston"));
+    public static void main(String[] args) {
+        List<String> str = new ArrayList<>(Arrays.asList("New jersey", "New york", "Ohio", "Florida", "Boston"));
         System.out.println(str);
-        getLength(str);
+        System.out.println("getLength(str) = " + getLength(str));
+
+
 
     }
 
     private static ArrayList<Integer> getLength(List<String> arrList) {
-        ArrayList<Integer> length = new ArrayList<>();
-
-        for (int i = 0; i <arrList.size() ; i++) {
+        ArrayList<Integer> uzunluk = new ArrayList<>();
+        //  String[] str = arrList.toArray(new String[0]);
+        for (int i = 0; i < arrList.size(); i++) {
+            uzunluk.add(arrList.get(i).replace(" ","").length());
 
         }
+        return uzunluk;
 
+      /*
 
+        for (int i = 0; i < strList.size(); i++) {
+            newInt.add(str[i].uzunluk());
+        }
+        return newInt;
+*/
     }
-
-  */
 
 
 }

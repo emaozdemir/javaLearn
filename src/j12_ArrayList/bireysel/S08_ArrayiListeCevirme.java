@@ -6,7 +6,7 @@ import java.util.List;
 
 public class S08_ArrayiListeCevirme {
     public static void main(String[] args) {
-        Integer []arr={14, 19, 5, 21, 9};//Integer yazan yerde normalde int yazarız.ama 3.yöntemi kullanmamız içinbuyutmemiz gerekir.
+       Integer[]arr={14, 19, 5, 21, 9};//Integer yazan yerde normalde int yazarız.ama 3.yöntemi kullanmamız içinbuyutmemiz gerekir.
         //bu arrayi 3 sekilde list e cevirebiliriz
 
         //1. loop ile;
