@@ -17,7 +17,7 @@ public class Task19 {
 
         // output->? int arr3[][]={{8,10},{13,15},{18}};
 
-    /*    for (int i = 0; i < (arr1.length > arr2.length ? arr2.length : arr1.length); i++) {
+        for (int i = 0; i < (arr1.length > arr2.length ? arr2.length : arr1.length); i++) {
             for (int j = 0; j < (arr1[i].length < arr2[i].length ? arr1[i].length : arr2[i].length); j++) {
                 System.out.print((arr1[i][j] + arr2[i][j]) + " ");
 
@@ -29,11 +29,12 @@ public class Task19 {
                 System.out.print((arr1[i][j] + arr2[i][j]) + " ");
             }
 
-*/
-        // Yeni çok boyutlu dizinin boyutlarını belirleme
-        // Yeni çok boyutlu dizinin boyutlarını belirleme
-        // Yeni çok boyutlu dizinin boyutlarını belirleme
-        int maxRows = Math.max(arr1.length, arr2.length);
+
+
+            // Yeni çok boyutlu dizinin boyutlarını belirleme
+            // Yeni çok boyutlu dizinin boyutlarını belirleme
+            // Yeni çok boyutlu dizinin boyutlarını belirleme
+   /*      int maxRows = Math.max(arr1.length, arr2.length);
         int[][] resultArray = new int[maxRows][];
 
         for (int i = 0; i < maxRows; i++) {
@@ -56,7 +57,8 @@ public class Task19 {
             }
             System.out.println();
         }
-
+*/
+        }
     }
 }
 
