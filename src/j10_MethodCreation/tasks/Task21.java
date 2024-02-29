@@ -7,5 +7,6 @@ public class Task21 {
     */
 
 
+
     }
 }

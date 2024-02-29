@@ -16,15 +16,13 @@ public class Task07 {
          * OUTPUT : String[] isimler={"Haluk","Emin","Furkan","Kerem","Taylan","Orhan","Sinan","Kemal","Ahmet","Ali"};
          */
 
-        ArrayList<String > isimlist=new ArrayList<String>(Arrays.asList("Haluk","Emin","Kemal","Kerem","Taylan","Orhan","Sinan","Furkan","Ahmet","Ali"));
-        String str3=isimlist.get(2);
-        String str8=isimlist.get(7);
+        ArrayList<String> isimlist = new ArrayList<String>(Arrays.asList("Haluk", "Emin", "Kemal", "Kerem", "Taylan", "Orhan", "Sinan", "Furkan", "Ahmet", "Ali"));
+        String str3 = isimlist.get(2);
+        String str8 = isimlist.get(7);
         System.out.println(isimlist);
-        isimlist.set(2,str8);
-        isimlist.set(7,str3);
+        isimlist.set(2, str8);
+        isimlist.set(7, str3);
         System.out.println(isimlist);
-
-
 
 
     }

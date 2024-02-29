@@ -21,6 +21,8 @@ public class C07_MdArrays {
 		 * 3- Multi dimensional array'de bir elemanin indexi icin
 		 *  en distaki array haric, elemana kadar ic ice olan tum arraylerin indexlerini yazmak gerekir
 		 */
+
+
         int[][] arr1=new int[3][5];//3 katli her katta 5 daire olan bos bir md array tanimlandi
         // ->default olarak her elemana 0 degeri atandi
 
