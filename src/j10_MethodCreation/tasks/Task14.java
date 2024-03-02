@@ -26,13 +26,15 @@ public class Task14 {
 
     toplam = 536.0
     */
-
-
+        Scanner scan = new Scanner(System.in);
+        System.out.println("saatlik çalışma ücretiniz ne kadardir?  ");
+        double saatlikUcret=scan.nextInt();
+        System.out.println(" hangi saatler arasında çalısırsin?  ");
+        double mesaiSaati=scan.nextInt();
+        System.out.println("fazla mesaiye kalırsanız  kazancını kaç ile katlayacağını giriniz:   ");
+        double extraKati=scan.nextInt();
 
     }//main sonu
-
-
-
 
 
 }//class sonu

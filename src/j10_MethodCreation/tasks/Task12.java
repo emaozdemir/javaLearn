@@ -17,9 +17,21 @@ public class Task12 {
         "gmail.com"-> false
         "ebıkGabık@gmail.com"-> true
          */
+        System.out.println("mailControl() = " + mailControl());
+
 
     }//main sonu
 
+    private static boolean mailControl() {
+        System.out.println("lütfen mailinizi giriniz:  ");
+        String mail = input.nextLine();
+        if (mail.contains("@") && mail.contains(".") && !mail.startsWith("@")) {
+            return true;
+        } else
+            return false;
+
+
+    }
 
 
 }//Class sonu

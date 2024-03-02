@@ -16,21 +16,31 @@ public class Task17_Stringle {
         int num = input.nextInt();
 
         System.out.println(stringReverse(num));
+        //2.yol
+        System.out.println("forRezerved() = " + forReverse(num));
 
     }
 
+    private static int forReverse(int num) {
+        int reversed=0;
+        for ( ; num!=0 ; num/=10) {
+            int digit=num%10;
+            reversed=reversed*10+digit;
+        }
+        return reversed;
+    }
+
     private static String stringReverse(int num) {
-        String str=String.valueOf(num);
-        String reversed="";
-        for (int i = str.length()-1; i >=0 ; i--) {
-            reversed+=str.charAt(i);
+        String str = String.valueOf(num);
+        String reversed = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
         }
         return reversed;
     }
 
 
-
-    }
+}
 
 
 

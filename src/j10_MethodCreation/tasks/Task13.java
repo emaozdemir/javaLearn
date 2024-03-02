@@ -28,6 +28,22 @@ public class Task13 {
 
 
     }//main sonu
+    private static boolean controlEnd() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("metin girin : ");
+        String birinci = scan.nextLine();
+        System.out.println("metin girin : ");
+        String ikinci = scan.nextLine();
+        boolean esitMi = false;
+
+        if (birinci.endsWith(ikinci)) {
+            esitMi = true;
+
+        }
+        return esitMi;
+
+
+    }
 
 
  /*       private static boolean controlToString() {
@@ -55,22 +71,7 @@ public class Task13 {
 
   */
 
-    private static boolean controlEnd() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("metin girin : ");
-        String birinci = scan.nextLine();
-        System.out.println("metin girin : ");
-        String ikinci = scan.nextLine();
-        boolean esitMi = false;
 
-        if (birinci.endsWith(ikinci)) {
-            esitMi = true;
-
-        }
-        return esitMi;
-
-
-    }
 
 
 }//Class sonu
