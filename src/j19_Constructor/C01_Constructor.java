@@ -33,7 +33,7 @@ Bu zaman kaybını büyük ölçüde azaltır.
 
     public static void main(String[] args) {//main level
         String maindekiVariable = "mainden selamlar";//main scope ta variable create edildi.
-        //classIsmi     objName=new keywordle constructor call -> obj create etmek için.
+        //classIsmi    objName =new keywordle constructor call -> obj create etmek için.
         C01_Constructor obj1 = new C01_Constructor();//FARKLI SCOPETA AYNİ İSİMDE OBJ CREATE EDİLDİ.
         //C01_Constructor obj1=new C01_Constructor();//Ayni scopta ayni isimde obje create edilemez.
         C01_Constructor obj2 = new C01_Constructor();//Ayni scopta farkli isimde istenilen kadar obje create edilebilir.
