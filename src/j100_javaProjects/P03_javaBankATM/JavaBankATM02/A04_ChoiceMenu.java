@@ -3,7 +3,8 @@ package j100_javaProjects.P03_javaBankATM.JavaBankATM02;
 import java.util.Locale;
 import java.util.Scanner;
 
-import static advancedJavaPractice.JavaProjects.P02_javaBankATM.JavaBankATM02.A03_Transactions.*;
+import static j100_javaProjects.P03_javaBankATM.JavaBankATM02.A03_Transactions.*;
+
 
 public class A04_ChoiceMenu {
     static String correctPassword = "0000";

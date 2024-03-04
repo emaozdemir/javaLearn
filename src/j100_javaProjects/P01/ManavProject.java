@@ -30,36 +30,38 @@ public class ManavProject {//Class level
     }//main sonu
 
     private static void musteriSecim() {
-        System.out.println("Agam marketime hoş geldin :) \n" +"sececeğiniz urun listesi : " +urunListesi + "\n" +"sececeğiniz urun fiyat listesi : "+ urunFiyatListesi);
+        System.out.println("Agam marketime hoş geldin :) \n" + "sececeğiniz urun listesi : " + urunListesi + "\n" + "sececeğiniz urun fiyat listesi : " + urunFiyatListesi);
         System.out.print("agam hangi urun istersin : ");
 
         int urunSecim = input.nextInt();
 
         if (urunSecim < 6 && urunSecim > 0) {//girlen urun kodunu 1,2,3..5 kontrolu yapıldı
             System.out.println("Agam sectiğiniz urunden kc kilo istersin : ");
-            double kilo=input.nextDouble();
-            toplamOdenecekMiktar+=kilo*urunFiyatListesi.get(urunSecim-1);
-            System.out.println("Agam sectiğin urun :"+urunListesi.get(urunSecim-1)+"\n"+
-                    "\n  istediğiniz kilo : "+ kilo +
-                    " agam sectiğin urunun fiyatı : "+urunFiyatListesi.get(urunSecim-1)+"\n"+
-                    " agam toplam odemeniz : " +toplamOdenecekMiktar);
+            double kilo = input.nextDouble();
+            toplamOdenecekMiktar += kilo * urunFiyatListesi.get(urunSecim - 1);
+            System.out.println("Agam sectiğin urun :" + urunListesi.get(urunSecim - 1) + "\n" +
+                    "\n  istediğiniz kilo : " + kilo +
+                    " agam sectiğin urunun fiyatı : " + urunFiyatListesi.get(urunSecim - 1) + "\n" +
+                    " agam toplam odemeniz : " + toplamOdenecekMiktar);
             System.out.println("Agam alışverişe DEWAMKEEE için 1 KASA için için 2 giresen");
-            int karar=input.nextInt();
-            if (karar ==1) {
+            int karar = input.nextInt();
+            if (karar == 1) {
                 musteriSecim();
-            } else if (karar==2) {
+            } else if (karar == 2) {
                 kasa();
-            }else System.out.println("agam gelmim ora adam gibin bişey giresen ");
+            } else System.out.println("agam gelmim ora adam gibin bişey giresen ");
 
-        } else{ System.out.println("agam gelmim ora adam gibin bişey giresen ");
+        } else {
+            System.out.println("agam gelmim ora adam gibin bişey giresen ");
 
-            musteriSecim();}
+            musteriSecim();
+        }
     }
 
     private static void kasa() {
 
 
-        System.out.println("Agam toplam ödemeniz gereken tutar :"+toplamOdenecekMiktar+" yine bekleriz SELAMKEEE :)");// 4. adım
+        System.out.println("Agam toplam ödemeniz gereken tutar :" + toplamOdenecekMiktar + " yine bekleriz SELAMKEEE :)");// 4. adım
     }
 
 
