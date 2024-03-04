@@ -16,11 +16,11 @@ public class C03_Student {//class level
     public String toString() {
         return
                 "ad='" + ad + '\'' +
-                ", soyad='" + soyad + '\'' +
-                ", sinif=" + sinif +
-                ", ortalama=" + ortalama +
-                ", okulNo=" + okulNo +
-                ", takdirBelgesi=" + takdirBelgesi;
+                        ", soyad='" + soyad + '\'' +
+                        ", sinif=" + sinif +
+                        ", ortalama=" + ortalama +
+                        ", okulNo=" + okulNo +
+                        ", takdirBelgesi=" + takdirBelgesi;
     }
 
     public C03_Student(String ad, String soyad, int sinif, double ortalama, int okulNo, boolean takdirBelgesi) {
@@ -37,14 +37,14 @@ public class C03_Student {//class level
     Task-> fields: ad, soyad, sınıf, ortalama, okulNo, takdirBelgesi olan 2 farklı obj ile
     mezuniyet(ortalama 50 üstü ise mezun oldunuz) sosyalFaaliyet methodlarını  print eden code create ediniz.
      */
-        C03_Student s1=new C03_Student();//p'siz cost. ile s1 objesi create edildi
-        s1.ad="Bahtiyar";
-        s1.soyad="Aydin";
-        s1.okulNo=1453;
-        s1.sinif=12;
-        s1.ortalama=85.0;
-        s1.takdirBelgesi=true;
-        C03_Student s2=new C03_Student("JavaNaz","JavaHan",11,45.0,123,false);
+        C03_Student s1 = new C03_Student();//p'siz cost. ile s1 objesi create edildi
+        s1.ad = "Bahtiyar";
+        s1.soyad = "Aydin";
+        s1.okulNo = 1453;
+        s1.sinif = 12;
+        s1.ortalama = 85.0;
+        s1.takdirBelgesi = true;
+        C03_Student s2 = new C03_Student("JavaNaz", "JavaHan", 11, 45.0, 123, false);
         System.out.println("s1 = " + s1);
         System.out.println("s2 = " + s2);
         System.out.println("s2.mezuniyet(s2.ortalama) = " + s2.mezuniyet(s2.ortalama));
@@ -57,7 +57,7 @@ public class C03_Student {//class level
         System.out.println("Sen evde oturmayi faaliyet mi sandin");
     }
 
-    public String mezuniyet(double ort){
-        return ort>50?"Mezun oldunuz":"Tuh bu da gol degil";
+    public String mezuniyet(double ort) {
+        return ort > 50 ? "Mezun oldunuz" : "Tuh bu da gol degil";
     }
 }//class sonu

@@ -7,7 +7,7 @@ public class Insan {
     char cinsiyet = 'E';
 
     //classta parametreli bir const olusturdumuz an javanın olusturdugu default const ezilir.
-    //istenirse
+    //istenirse manuel olarak parametresiz constructor create edilir.
     public Insan(String isim, int yas) {//iki parametreli const
         this.isim = isim;
 
