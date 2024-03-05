@@ -9,7 +9,7 @@ public class CO4_Scope {
         obj1.nonStatiMethod();//obj ile nonstatic meth call edildi
         System.out.println("obj1.developer = " + obj1.developer);//obj ile obj variable call edildi
         C01_InstanceVariable.statiMethod();//class name ile static meth call edildi.
-        //obj2.
+        //obj2. yapsakta C03_StaticKeyword instance variableler defaolt oldugu için baska package den cağırdıgım için gelemez.
 
     }
 }
