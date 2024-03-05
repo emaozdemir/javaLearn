@@ -1,6 +1,10 @@
-package j20_StaticKeyword.Tasks.Task02;
+package j20_StaticKeyword.Task02;
 
 public class Musteri {
+    String name;
+  ElektrikHesabi elektrikHesabi;
+
+
 
 
 }
