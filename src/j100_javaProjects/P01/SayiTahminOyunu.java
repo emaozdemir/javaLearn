@@ -4,6 +4,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SayiTahminOyunu {
+    /*
+    sayi tahmin etme oyunu bilgisayarin rastgele random class kullanilarak 0-100 arasinda bir sayi alip kullanicinin
+    tahmini her defasinda buyuk kucuk diye yönlendirerek rastgele sayiyi 3 tekrarda bulmasını saglayan method create ediniz
+     */
 
     public static void main(String[] args) {
         sayiTahminEt();

@@ -59,9 +59,8 @@ public class ManavProject {//Class level
     }
 
     private static void kasa() {
-
-
         System.out.println("Agam toplam ödemeniz gereken tutar :" + toplamOdenecekMiktar + " yine bekleriz SELAMKEEE :)");// 4. adım
+
     }
 
 

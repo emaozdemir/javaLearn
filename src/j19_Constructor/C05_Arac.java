@@ -27,6 +27,7 @@ public class C05_Arac {
         this();//parametresiz constructor call edildi. const call mutlaka bodynin ilk satirinda olmalı yoksa CTE.
         this.model = model;
         this.maxHiz = maxHiz;
+
     }
 
     @Override
@@ -35,5 +36,6 @@ public class C05_Arac {
                 "model='" + model + '\'' +
                         ", maxHiz=" + maxHiz;
     }
+
 
 }

@@ -27,7 +27,7 @@ public class MarketProject {//Class level
     static List<String> gunler = new ArrayList<>(Arrays.asList("Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"));
     static List<Double> gunlukKazanc = new ArrayList<>(Arrays.asList());//2. adım
     static Scanner input = new Scanner(System.in);
-    static double haftanınToplamKazancı = 0;
+    static double haftanınToplamKazanci = 0;
 
 
     public static void main(String[] args) {//main level
@@ -36,12 +36,12 @@ public class MarketProject {//Class level
         int gun = 0;
         while (gun < 7) {
             System.out.print("Agam hele " + gunler.get(gun) + " gunu hasılatını giresen : ");
-            double gununKazancı = input.nextDouble();
-            haftanınToplamKazancı += gununKazancı;//loop dan gelen herbir gun hasılatı haftalık toplam kazanca eklendi
-            gunlukKazanc.add(gununKazancı);//lopp dan gelen herbir gunun hasılatı gunluk kazanc listine ekledi
+            double gununKazanci = input.nextDouble();
+            haftanınToplamKazanci += gununKazanci;//loop dan gelen herbir gun hasılatı haftalık toplam kazanca eklendi
+            gunlukKazanc.add(gununKazanci);//lopp dan gelen herbir gunun hasılatı gunluk kazanc listine ekledi
             gun++;
         }
-        System.out.println("Agam bu haftalık toplam hasılat : " + haftanınToplamKazancı);
+        System.out.println("Agam bu haftalık toplam hasılat : " + haftanınToplamKazanci);
         System.out.println("Agam bu hafta  gunluk   hasılat : " + gunlukKazanc);
         System.out.println("Agam bu hafta ortalama kazanc :  = " + getOrtalamaKazanc());
         System.out.println("Agam bu hafta ortlamadan çok kazana gunler : " + getOrtalamaninUstundeKazancGünleri());
@@ -51,31 +51,31 @@ public class MarketProject {//Class level
 
     private static ArrayList<String> getOrtalamaninAltindaKazancGünleri() {
 
-        ArrayList<String> ortlamanınAltıGunler = new ArrayList<>();//ortlamayı gecmeyen gunleri eklenceği bos list tanımlandı
+        ArrayList<String> ortalaminAltiGunler = new ArrayList<>();//ortlamayı gecmeyen gunleri eklenceği bos list tanımlandı
         for (int i = 0; i < gunlukKazanc.size(); i++) {//gun sayısı kadar tekrar tanımlandı
             if (gunlukKazanc.get(i) < getOrtalamaKazanc()) {//tekrardan gelen herbir gunu hasılatı ortlamadan kucuklugu kontrol edildi
-                ortlamanınAltıGunler.add(gunler.get(i));//ortlamadan kucuk olan gun lşste atandı
+                ortalaminAltiGunler.add(gunler.get(i));//ortlamadan kucuk olan gun lşste atandı
             }
         }
 
-        return ortlamanınAltıGunler;
+        return ortalaminAltiGunler;
 
     }
 
     private static ArrayList<String> getOrtalamaninUstundeKazancGünleri() {// 5. adım
-        ArrayList<String> ortlamanınUstuGunler = new ArrayList<>();//ortlamayı gecen gunleri eklenceği bos list tanımlandı
+        ArrayList<String> ortlamaninUstuGunler = new ArrayList<>();//ortlamayı gecen gunleri eklenceği bos list tanımlandı
         for (int i = 0; i < gunlukKazanc.size(); i++) {//gun sayısı kadar tekrar tanımlandı
             if (gunlukKazanc.get(i) > getOrtalamaKazanc()) {//tekrardan gelen herbir gunu hasılatı ortlamadan buyuklugu kontrol edildi
-                ortlamanınUstuGunler.add(gunler.get(i));//ortlamadan buyuk olan gun lşste atandı
+                ortlamaninUstuGunler.add(gunler.get(i));//ortlamadan buyuk olan gun lşste atandı
             }
         }
 
-        return ortlamanınUstuGunler;
+        return ortlamaninUstuGunler;
     }
 
     private static double getOrtalamaKazanc() {//4 . adım
 
 
-        return haftanınToplamKazancı / 7;
+        return haftanınToplamKazanci / 7;
     }
 }//Class sonu
