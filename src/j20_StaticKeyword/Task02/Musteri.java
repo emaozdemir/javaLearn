@@ -1,10 +1,14 @@
 package j20_StaticKeyword.Task02;
 
 public class Musteri {
+
+
     String name;
-  ElektrikHesabi elektrikHesabi;
 
-
+    ElektrikHesabi elektrikHesabi;//ElektrikHesabı data turunden bir elektirikHesabı obj create ed,ldi
+    //ElektrikHesabi ->non primitif bit data turu
 
 
 }
+
+

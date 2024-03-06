@@ -4,6 +4,7 @@ public class Rectangle {
     int width ;
     int length ;
 
+
     public int cevre() {
         return (width+length)*2;
     }

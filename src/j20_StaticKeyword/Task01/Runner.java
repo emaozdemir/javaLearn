@@ -12,12 +12,18 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Rectangle dikdortgen = new Rectangle();
+        Rectangle dikdortgen = new Rectangle();//obj create ettik p siz
         dikdortgen.width = 10;
         dikdortgen.length = 5;
         System.out.println("dikdortgen.alan() = " + dikdortgen.alan());
         System.out.println("dikdortgen.cevre() = " + dikdortgen.cevre());
 
+
+        Rectangle obj2 = new Rectangle();
+        obj2.width = 5;
+        obj2.length = 3;
+        System.out.println("dikdortgen.alan() = " + dikdortgen.alan());
+        System.out.println("dikdortgen.cevre() = " + dikdortgen.cevre());
 
     }
 }

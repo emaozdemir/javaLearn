@@ -1,4 +1,4 @@
-package j20_StaticKeyword.Tasks.Task04;
+package j20_StaticKeyword.Task04;
 
 import java.util.Scanner;
 

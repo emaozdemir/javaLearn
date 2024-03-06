@@ -1,4 +1,4 @@
-package j20_StaticKeyword.Tasks.Task03;
+package j20_StaticKeyword.Task03;
 
 import java.util.ArrayList;
 

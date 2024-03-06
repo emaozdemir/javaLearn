@@ -1,10 +1,10 @@
-package j100_javaProjects.P03_javaBankATM.JavaBankATM02;
+package j100_javaProjects.P03.JavaBankATM02;
 
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
-import static j100_javaProjects.P03_javaBankATM.JavaBankATM02.A04_ChoiceMenu.*;
+import static j100_javaProjects.P03.JavaBankATM02.A04_ChoiceMenu.*;
 
 
 public class A03_Transactions<pin1> {
