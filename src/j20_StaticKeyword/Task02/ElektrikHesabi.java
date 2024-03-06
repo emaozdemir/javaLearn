@@ -8,13 +8,19 @@ public class ElektrikHesabi {
     double fatura;
 
 
-    public double odenecekTutar() {
-        return fatura = toplamTuketim * oran;//ayni
+
+    public void tuketimEkle(int tuketim){
+        toplamTuketim+=tuketim;//Ayni class icerisinde static olmayan variable static olmaya meth obj olmadan call edilebilir
+    }
+    public double odenecekTutar(){
+        fatura=oran*toplamTuketim;
+        return fatura;
     }
 
-    public void tuketimEkle(int tuketim) {
-        toplamTuketim += tuketim;
+    @Override
+    public String toString() {
+        return
+                "toplamTuketim=" + toplamTuketim +
+                        ", fatura=" + fatura;
     }
-
-
 }

@@ -8,7 +8,12 @@ public class Musteri {
     ElektrikHesabi elektrikHesabi;//ElektrikHesabı data turunden bir elektirikHesabı obj create ed,ldi
     //ElektrikHesabi ->non primitif bit data turu
 
-
+    @Override
+    public String toString() {
+        return
+                "name='" + name + '\'' +
+                        ", elektrikHesabi=" + elektrikHesabi;
+    }
 }
 
 
