@@ -7,7 +7,7 @@ public class C02_AccessModifierRunner {
         System.out.println("obj.publicYas = " + obj.publicYas);
         System.out.println("obj.protectedYas = " + obj.protectedYas);
         System.out.println("obj.defaultYas = " + obj.defaultYas);
-        //System.out.println("obj.privateYas = " + obj.privateYas);
+        //System.out.println("obj.privateYas = " + obj.privateYas);//private oldugu ıcın gelemez
         C01_AccessModifier.defaultMeth();
         //C01_AccessModifier.privateMeth();//private metoda baska classtan erisim olmaz->CTE
 

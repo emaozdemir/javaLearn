@@ -40,5 +40,5 @@ public class Runner {
 
     }
 
-
+//olusturulan her class non primitif bir data tipidir o yuzden buyuk harle cll
 }
