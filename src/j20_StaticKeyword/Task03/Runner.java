@@ -12,8 +12,21 @@ public class Runner {
      */
 
     public static void main(String[] args) {
+        Student ogrenci = new Student("Ali", 10);
 
+        Lesson ders1 = new Lesson("Matematik", 5);
+        Lesson ders2 = new Lesson("Fizik", 4);
+        Lesson ders3 = new Lesson("Kimya", 3);
 
+        ogrenci.addLesson(ders1);
+        ogrenci.addLesson(ders2);
+        ogrenci.addLesson(ders3);
+
+        ogrenci.printAvailableLessons();
     }
 
+
+
 }
+
+

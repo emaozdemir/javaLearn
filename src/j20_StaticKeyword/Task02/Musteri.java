@@ -1,12 +1,8 @@
 package j20_StaticKeyword.Task02;
 
 public class Musteri {
-
-
     String name;
-
-    ElektrikHesabi elektrikHesabi;//ElektrikHesabı data turunden bir elektirikHesabı obj create ed,ldi
-    //ElektrikHesabi ->non primitif bit data turu
+    ElektrikHesabi elektrikHesabi;
 
     @Override
     public String toString() {
@@ -15,5 +11,3 @@ public class Musteri {
                         ", elektrikHesabi=" + elektrikHesabi;
     }
 }
-
-

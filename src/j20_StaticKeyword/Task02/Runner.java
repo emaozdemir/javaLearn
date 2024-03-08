@@ -19,25 +19,26 @@ public class Runner {
 
 
     public static void main(String[] args) {
-        Musteri musteriObjesi=new Musteri();
-        musteriObjesi.name="sema";
+        Musteri obj=new Musteri();
+        obj.name="Sema hanim";
         ElektrikHesabi hesap=new ElektrikHesabi();
-        musteriObjesi.elektrikHesabi=hesap;
-        musteriObjesi.elektrikHesabi.tuketimEkle(100);
-        musteriObjesi.elektrikHesabi.tuketimEkle(150);
-        System.out.println("toplam tuketim : "+musteriObjesi.elektrikHesabi.toplamTuketim);
-        System.out.println("odenecek miktar : "+musteriObjesi.elektrikHesabi.odenecekTutar());//1 yöntem cagırma
-        System.out.println("odenecek miktar : "+musteriObjesi.elektrikHesabi.fatura);//2 yöntem cagırma
-        System.out.println("musteriObjesi = " + musteriObjesi);
+        obj.elektrikHesabi=hesap;
+        obj.elektrikHesabi.tuketimEkle(100);
+        obj.elektrikHesabi.tuketimEkle(150);
+        System.out.println("Toplam tuketim : "+obj.elektrikHesabi.toplamTuketim);
+        System.out.println("Odenecek miktar : "+obj.elektrikHesabi.odenecekTutar());//1.yontem
+        System.out.println("Odenecek miktar 2: "+obj.elektrikHesabi.fatura);//2.yontem
+        System.out.println("obj = " + obj);
 
         Musteri obj2=new Musteri();
-        obj2.name="Safvet bey";
+        obj2.name="Savfet bey";
         obj2.elektrikHesabi=new ElektrikHesabi();
         obj2.elektrikHesabi.tuketimEkle(250);
         obj2.elektrikHesabi.tuketimEkle(200);
         obj2.elektrikHesabi.odenecekTutar();
         System.out.println("obj2 = " + obj2);
 
-
     }
+
+
 }
