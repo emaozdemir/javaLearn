@@ -1,7 +1,5 @@
 package j20_StaticKeyword.Task03;
 
-import java.util.ArrayList;
-
 public class Runner {
     /*
     Task 03 ->
