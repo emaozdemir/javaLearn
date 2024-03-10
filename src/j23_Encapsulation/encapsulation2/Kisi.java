@@ -22,7 +22,7 @@ runner class'da obj ile field ları print eden code create ediniz
         this.soyad = soyad;
         this.password = password;
         //  this.yas = yas;
-        //  this.yas = Math.abs(yas);// negatif değer girmeye karsı
+        //  this.yas = Math.abs(yas);// negatif değer girmeye karsı,mutlak deger meht call
         setYas(yas);// 2.yol negatif değer girmeye karsı
     }
 
@@ -49,6 +49,10 @@ runner class'da obj ile field ları print eden code create ediniz
     public String getPassword() {
         return password;
     }
+
+//    public void setPassword(String password){
+//        this.password=password;
+//    }
 
     public int getYas() {
         return yas;

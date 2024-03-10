@@ -8,12 +8,13 @@ public class AracRunner {
         a1.setMotorHacmi(2000);
         a1.setYil(1985);
         System.out.println("a1 = " + a1);
-        Arac a2 = new Arac("Mercedes E250", "Gumus Gri", 200, 1983);
+        System.out.println("************");
+        Arac a2 = new Arac("Mercedes E250", "Gumus Gri", 200, 1999);
         System.out.println("a2.getModel() = " + a2.getModel());
         System.out.println("a2.getRenk() = " + a2.getRenk());
         System.out.println("a2.getMotorHacmi() = " + a2.getMotorHacmi());
         System.out.println("a2.getYil() = " + a2.getYil());
-
+        System.out.println("************");
         Arac a3 = new Arac("Honda Civic", "Inci Beyaz", 160, 202);
         System.out.println("a3.getModel() = " + a3.getModel());
         System.out.println("a3.getRenk() = " + a3.getRenk());

@@ -43,6 +43,15 @@ basit bir data objesi olabilirler. POJO'lar, genellikle diğer objeler veya bile
     public void setEmail(String email) {
         this.email = email;
     }
+
+    //(SADECE GETTER )
+//    public int idVer() {
+//        return id;
+//    }
+//
+//    public String mailVer() {
+//        return email;
+//    }
 //4.STEP
 
     @Override

@@ -34,12 +34,12 @@ public class C01_EncapsulationRunner {
     5) Kullanicinin kullandigi sistem arkasindaki karmasik yapiyi kullaniciya gosterilmez.
 
 */
-        C02_Encapsulation obj1=new C02_Encapsulation();//psiz const call edilerek obje create edildi.
-        obj1.ad="Halit bey";
-        obj1.soyad="Guzel";
-       // System.out.println("obj1.idVer() = " + obj1.idVer());(4.step kısmı)
-        obj1.ad="Safvet bey"; //encapsule edilmeyen variable obj ile call edilip update edilir
-      // System.out.println("obj1.mailVer() = " + obj1.mailVer());
+        C02_Encapsulation obj1 = new C02_Encapsulation();//psiz const call edilerek obje create edildi.
+        obj1.ad = "Halit bey";
+        obj1.soyad = "Guzel";
+        // System.out.println("obj1.idVer() = " + obj1.idVer());(3-4.step kısımda getter setter filan ve  to string yaptiğimiz için gerek kalmadı)
+        obj1.ad = "Safvet bey"; //encapsule edilmeyen variable obj ile call edilip update edilir
+        // System.out.println("obj1.mailVer() = " + obj1.mailVer());
         System.out.println("obj1.getId() = " + obj1.getId());//1001
         System.out.println("obj1.getEmail() = " + obj1.getEmail());//ebikGabik@gmail.com
         obj1.setEmail("falanFilan@gmail.com");
