@@ -20,11 +20,13 @@ public class Runner {
 
     */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Bisiklet bisiklet = new Bisiklet();
-        bisiklet.islemYap();
-
+        Bisiklet bisiklet = Bisiklet.bisikletOlsutur();
+        Scanner oku = new Scanner(System.in);
+        int secim = 0;
+        do {
+            bisiklet.menuYaz();
+            secim = oku.nextInt();
+            bisiklet.islemYap(bisiklet, secim);
+        } while (secim < 5);
     }
-
-
 }

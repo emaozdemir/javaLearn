@@ -5,7 +5,7 @@ public class Kedi extends Memeliler {
         System.out.println("parametersiz Kedi const call edildi");
     }
 
-    public void cırmalama() {
+    public void cirmalama() {
         System.out.println("kedi kızdı kac.");
     }
 

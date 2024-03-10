@@ -33,10 +33,21 @@ public class Runner {           /*
         m1.hareket();//grand parent classtan meth call edildi.
         m1.icme();//grand parent classtan meth call edildi.
 
-        Koyun k1=new Koyun();//child classtan obje cerate edildi
-        k1.meler();//child class kendi methodunu call etti
-        k1.sutBeslen();//parent classtan method call edildi.
+        Koyun k1=new Koyun();//child class'tan obj create edildi
+        k1.meler();//child class kendi meth call edildi
+        k1.sutBeslen();//parent class'tan meth call edildi
+        k1.dogum();//parent class'tan meth call edildi
+        k1.icme();//grand-parent class'tan meth call edildi
+        k1.hareket();//grand-parent class'tan meth call edildi
+        k1.beslenme();//grand-parent class'tan meth call edildi
 
+        Kedi p1=new Kedi();//child class'tan obj create edildi
+        p1.cirmalama();//child class kendi meth call edildi
+        p1.sutBeslen();//parent class'tan meth call edildi
+        p1.dogum();//parent class'tan meth call edildi
+        p1.icme();//grand-parent class'tan meth call edildi
+        p1.hareket();//grand-parent class'tan meth call edildi
+        p1.beslenme();//grand-parent class'tan meth call edildi
 
     }
 }
