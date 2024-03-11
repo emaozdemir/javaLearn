@@ -1,4 +1,4 @@
-package j24_Inheritance;
+package j24_Inheritance.inheritance01;
 
 public class Runner {           /*
  1)Java'da class'lar arasinda parent(Aile)-child(Cocuk)  relationship(iliski) tanımlanmıştır.

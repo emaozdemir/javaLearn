@@ -40,7 +40,7 @@ public class RentApartments {//outher Clas level
 
     private int rent;
 
-    public int rentCalculator() {
+    public int rentCalculator() {//method
         if (roomCount == 0) {
             this.rent = 1400;
         } else if (roomCount == 1) {
@@ -53,7 +53,7 @@ public class RentApartments {//outher Clas level
         return this.rent += getBalconyOrNo();
     }
 
-    private int getBalconyOrNo() {
+    private int getBalconyOrNo() {//method
         if (balconyOrNo) {
             return 200;
         } else return 0;
