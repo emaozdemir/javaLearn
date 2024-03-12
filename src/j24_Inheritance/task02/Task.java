@@ -19,7 +19,7 @@ class task {
 
     "Agama bolcana super offer"
     "Agam SubClass'dan selam dewamkeee. "
-    SubClasstaki sayi :33
-    süperClasstaki sayi  :17
+    süperClasstaki sayi :33
+    SubClasstaki sayi  :17
      */
 }
