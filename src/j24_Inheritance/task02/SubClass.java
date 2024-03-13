@@ -5,8 +5,8 @@ public class SubClass extends SuperClass {
     int sayi = 17;
 
     @Override
-    String ebikGabik() {
-        return "Agama bolcana super offer";
+    public String ebikGabik() {
+        return "Agam SubClass'dan selam dewamkeee. ";
     }
 
 
@@ -18,8 +18,8 @@ public class SubClass extends SuperClass {
     }
 
     public void javaCan() {
-        System.out.println("this.ebikGabık() = " + this.ebikGabik());
         System.out.println("super.ebikGabik() = " + super.ebikGabik());
+        System.out.println("this.ebikGabık() = " + this.ebikGabik());
         System.out.println("super.sayi = " + super.sayi);
         System.out.println("this.sayi = " + this.sayi);
 

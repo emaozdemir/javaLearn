@@ -33,9 +33,9 @@ public class Runner {
         k2.mC();//mC->Kedi class meth call edildi
         k2.mM();//mM-> Memeliler class meth call edildi
         System.out.println("*********");
-        k3.mA();//mA-> Hayvanlar class meth call edildi
-       // k3.mC();//CTE->mC kendi clasinda ve parentte olmayan meth cagirilamadi
-        k3.mM();//mM-> Memeliler class meth call edildi
+        k3.mA();//mA-> Hayvanlar class meth call edildi(hayvanlarda var ama cocugunda alıp ordaki sonuclari getiriyor)
+       // k3.mC();//CTE->mC kendi clasinda ve parentte olmayan meth cagirilamadi(kendisinde mC yok yoksa kedi dekini alip getirirdi kendisinde olsaydu)
+        k3.mM();//mM-> Memeliler class meth call edildi(hayvanlarda var ama cocugunda alıp ordaki sonuclari getiriyor)
 
         /*
  Ahan da trick köşesinde böğün:inherit edilmiş herhangi bir obj methodları  cons. göre call edilir
