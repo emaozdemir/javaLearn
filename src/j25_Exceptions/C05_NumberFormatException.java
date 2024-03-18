@@ -9,16 +9,19 @@ public class C05_NumberFormatException {
         int sayi=Integer.parseInt(str1);
         System.out.println("sayi = " + sayi);//1234567
         System.out.println("sayi = " + (sayi+28));//1234595
+        System.out.println("***************");
+
+       // numerik formetta olmayan bir value olursa;
         String id="12345l678";
-//        int invalidId=Integer.parseInt(id);//RTE->NumberFormatException
+//        int invalidId=Integer.parseInt(id);//RTE->NumberFormatException // l harfi var donusturemeyizzz
 //        System.out.println("invalidId = " + invalidId);
         int invalidId;
         try {
             invalidId=Integer.parseInt(id);//RTE->NumberFormatException -> catch block run
             System.out.println("bu mesajı okuyorsan try sorunsuz calıstı");
         }catch (NumberFormatException e){
-            id="123451678";
-            invalidId=Integer.parseInt(id);
+            id="123451678";//catch içine istediğimi yazarım bende id nin doğru halini yazıyorum.
+            invalidId=Integer.parseInt(id);//ve donusturdum
 
             System.out.println("gercek id=  "+invalidId);
             System.out.println("bu mesajı okuyorsan try exc fırlattır catch block run oldu");

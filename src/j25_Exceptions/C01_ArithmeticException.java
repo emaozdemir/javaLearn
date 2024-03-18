@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class C01_ArithmeticException {
     public static void main(String[] args) {
         //  ArithmeticException -> matematiksel(Arithmetic) işlemlerde olusan Run Time Exception type'dir.
+        //(eğer bir stringe bir inte bolmek istersek ve hangi exc. calıscak diye kontrol etmek istersek
+        // scannerdan int sayi2 yazan yere kadar olan kısmıda try-catch içine almalıyız.)
         Scanner scan=new Scanner(System.in);
         System.out.println("1.sayiyi giriniz");
         int sayi1= scan.nextInt();
@@ -22,16 +24,16 @@ public class C01_ArithmeticException {
                aynı anda  sadece bir catch block çalışabilir hiç bir catch block çalışmaya da bilir
             3- parent - child ilişkisi olan catch'lerde child önce yazılmalı aksi halde CTE
              */
-        //} catch (Exception e) {//parent - child ilişkisi olan catch'lerde child önce yazılmalı aksi halde CTE
+        //} catch (Exception e) {//parent - child ilişkisi olan catch'lerde child önce yazılmalı aksi halde CTE en ata olanda Exception dir.
         } catch (ArithmeticException e) {//yakala->try blok'ta denenen istisnai durum gerceklesirse yapilmasi gereken handlin->action
             System.out.println("1.catch blok run edildi");
             System.out.println("Hic bolen sayi sifir olur mu "+e.getMessage());//exc. mesaji print edildi//0 a bolersek bu by zero yazdırırır.
-            e.printStackTrace();//exc. tum ciktiyi print eder
+           e.printStackTrace();//exc. tum ciktiyi print eder  //hatayla birlikte herseyi yazdırıyor en alta hatayı yazdırıyor.
             System.out.println("1.catch bloktan selamlar");
-        }catch (ArrayIndexOutOfBoundsException e){
+        }catch (ArrayIndexOutOfBoundsException e){//birden fazla catch yazılabilire örnek olarak yazıldı sadece.
             System.out.println("2.catch blok run edildi");
             System.out.println("2.catch bloktan selamlar");
-        }catch (Exception ebikGabik){//Exception->tum exc. turlerin parent classi:Hz Adem
+        }catch (Exception ebikGabik){//Exception->tum exc. turlerin parent classi:Hz Adem //son care diyebilirz yukardaki catclere yakalanırsa bir hata bu kullanılmaz.
             //Exception->olusan istisnai durum data type
             //ebikGabik->java'nin olusan exc. atanacak obj name
             System.out.println("Hz. Adem catch blok run edildi");
@@ -42,7 +44,7 @@ public class C01_ArithmeticException {
             /*
             try - catch içinde yapılan işlemlerden sonra mutlaka çalışması gereken block varsa finally  blok tanımlanır.
             hata alınır ama finaly tanımlanırsa catch çalışmasa bile
-            pr akışı devam eder.finally block hata olsa da olmasa da calışır.
+            program akışı devam eder.finally block hata olsa da olmasa da calışır.
             Cloud database ortamlarında bağlantı kesmek için kullanılır.cloud ile connection yazdıgınızda code
             başarılı bir şekilde çalışırsa işlem bitiiğinde finally block ile connection kapanmazsa maliyet pahalı olur :(
              */
