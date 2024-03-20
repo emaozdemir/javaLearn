@@ -2,7 +2,8 @@ package j26_Abstract;
 
 public class C01_AbstractClass {
     /*
-1- App obj için gereken durumlarda child class'lar parent class'daki method'ların genellikle body'lerine değiştirerek override ederler.
+1- App obj için gereken durumlarda child class'lar parent class'daki method'ların genellikle body'lerine
+değiştirerek override ederler.
    Bu gibi durumlarda parent class'daki method'a body tanımlamak ram ve memory acısından gereksizdir.
    Çözüm olarak java Parent Class'a body'siz -> abstract(soyut)  methodlar tanımlamıştır.
 
@@ -15,7 +16,8 @@ public class C01_AbstractClass {
   b) access modifier  sonrası abstract keyword kullanılmalı->public abstract class Honda {}
   c) abs method içinde abstract keyword ve {} body birarada kullanılamaz aksi halde CTE fırlatır.
   abstrack class tanımlamak için class ifadesinden önce abstract keyword kullanılmalı.
-4- Abs method sadece abs Class'da tanımlanabilir kesinlikle concrete class'da abs method tanımlanamaz.->fani dunyalı vuucudu görünmex soyut olamaz
+4- Abs method sadece abs Class'da tanımlanabilir kesinlikle concrete class'da abs method tanımlanamaz.->fani dunyalı
+vuucudu görünmex soyut olamaz
         ama abs class'da concerete method tanımlanabilir.->melekler isterse dunyalıya fiziken görünebilir.
 5- Abs Class içinde hem abs method hem de concrete method ve variable tanımlanabilir.
 6- Bir concerete child class parent abs class extend ettiğnde abs method'ları implement etmek zorundadır

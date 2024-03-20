@@ -1,17 +1,22 @@
 
         Soyut Sınıf (Abstract Class)
 
-  Nesne tabanlı programlamada sınıf hiyerarşisi oluşturulurken, bazen en tepede bulunan sınıf türünden nesneler programcılar için anlamlı olmayabilir.
-  Hiyerarşinin en tepesinde bulunan sınıfın kendisinden türetilecek olan alt sınıflar için ortak bir arayüz (interface) görevi yapması istenebilir.
-  Bunun için çözüm olarak oluşturulan metotlara ve sınıflara soyut metot (abstract method) ya da soyut sınıf (abstract class) denir.
+  Nesne tabanlı programlamada sınıf hiyerarşisi oluşturulurken, bazen en tepede bulunan sınıf türünden nesneler
+   programcılar için anlamlı olmayabilir.
+  Hiyerarşinin en tepesinde bulunan sınıfın kendisinden türetilecek
+   olan alt sınıflar için ortak bir arayüz (interface) görevi yapması istenebilir.
+  Bunun için çözüm olarak oluşturulan metotlara ve sınıflara soyut metot (abstract method)
+  ya da soyut sınıf (abstract class) denir.
   Soyut sınıflar büyük projelerde kullanılırlar ve kalıtım özelliğini kullanarak kod tekrarını azaltırlar.
-  Soyut sınıflar diğer sınıflara taban olmak için kullanılırlar. Nesne türetemezler. Önlerine “abstract” sözcüğü yazılarak soyutlaştırılırlar.
+  Soyut sınıflar diğer sınıflara taban olmak için kullanılırlar. Nesne türetemezler.
+   Önlerine “abstract” sözcüğü yazılarak soyutlaştırılırlar.
   Önlerine "virtual" yazılmaz çünkü “abstract” sözcüğü uygulanan tüm sınıf ve metotlar zaten sanaldır.
 
 Kullanırken dikkat edilmesi gerekenler:
 
 •    Soyut sınıflar “abstract” türünden nesneler tanımlamazlar.
-•    Soyut sınıflar içerilerinde soyut olmayan metotlar da barındırabilir ancak soyut metotlar sadece soyut sınıflar içerisinde bildirilebilir.
+•    Soyut sınıflar içerilerinde soyut olmayan metotlar da barındırabilir ancak soyut metotlar
+sadece soyut sınıflar içerisinde bildirilebilir.
 •    Soyut metotlar türeyen sınıfta mutlaka bildirilmelidir.
 •    Soyut metotlar override edilmek zorundadırlar, aksi takdirde derleyici hatası alınır.
 •    “Static” metotlar soyut olarak tanımlanamazlar.

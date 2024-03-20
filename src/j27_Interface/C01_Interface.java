@@ -12,9 +12,12 @@ public class C01_Interface {
               Method access modifier public olduğu halde “default”  keyword method type olarak kullanılmaz ise CTE verir.
 
         TRICK :)
-             Concrete method’da “default”  keyword yerine “static” keyword de kullanılabilir ama hem “default” hem de “static” keyword
-             birlikte kullanılamaz… Buradaki “static” keyword interface özel bir keyword’dur aynı package’deki başka class’dan class
-             name ile method call edilemez. Default veya static keyword’u ile tanımlanan method’lar concrete olduğu için override yapılması zorunlu değildir.
+             Concrete method’da “default”  keyword yerine “static” keyword de kullanılabilir ama hem “default” hem de
+             “static” keyword
+             birlikte kullanılamaz… Buradaki “static” keyword interface özel bir keyword’dur aynı package’deki
+             başka class’dan class
+             name ile method call edilemez. Default veya static keyword’u ile tanımlanan method’lar concrete
+             olduğu için override yapılması zorunlu değildir.
 
         TRICK :)  Concrete method’da “default method”  obje ile “static method”  method name ile call edilir
 
@@ -72,7 +75,8 @@ public class C01_Interface {
              b)Interface yapilarda concrete method icin kullanilan "default" keyword'u kesinlikle asla AccMod turunu vermez .
              c)Interface yapilarda concrete method child class tarafindan override edilmek zorunda degildir.
              d)Interface yapilarda "default" olarak creat edilen concrete method child class'ı ancak obj ile call edilir.
-             e)Interface yapilarda "static" olarak creat edilen concrete method child class'ı ancak Datatype(interface name) ile  call edilir.
+             e)Interface yapilarda "static" olarak creat edilen concrete method child class'ı ancak Datatype(interface name)
+             ile  call edilir.
 
         11) Interface yapilarda istenirse main method tanımlanabilir ama bad practice
      */

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 abstract class Phone {
-    public abstract void options(String gb,String inch);
+    public abstract void options(String gb,String inch);//neden?
 
 }
 
@@ -78,7 +78,8 @@ public class Task02 {
     getSum isimli, arraylist'i parametre aldığınız bir method oluşturun.
 
     ve return tipi int;
-                     arraylist'in içindeki bütün seçenekleri elde edin ve sayısal olmayan karakterleri(a b c... A B C...) ve özel karakterleri (.,!'^+...) silin
+                     arraylist'in içindeki bütün seçenekleri elde edin ve sayısal olmayan karakterleri
+                     (a b c... A B C...) ve özel karakterleri (.,!'^+...) silin
                      sonra bunları int'e çevirin.
                      tüm sayıları toplayın.
 
