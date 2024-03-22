@@ -1,6 +1,26 @@
 
 
 
-Kare, Dikdortken, ve cember Class'larından oluşacak bir geometri app. için
-    ayrı ayrı , fakat ortak metodlarının (cevresi() ve alani() )zorunlu kılan
-    gerekli mimari create edip  ve obj ile değerleri  print ediniz....
+Kare, Dikdortken, ve cember Class'larından oluşacak
+bir geometri app. için
+    ayrı ayrı , fakat ortak metodlarının
+     (cevresi() ve alani() )zorunlu kılan
+    gerekli mimari create edip  ve obj ile
+     değerleri  print ediniz....
+
+     alan=pi*r*r
+     cevre =2*pi*r
+
+     Dikdörtgenin Alanı:
+     Alan = Uzunluk x Genişlik
+
+     Dikdörtgenin Çevresi:
+     Çevre = 2 x (Uzunluk + Genişlik)
+
+     Karenin alanı ve çevresi formülleri ise:
+
+     Karenin Alanı:
+     Alan = Kenar x Kenar
+
+     Karenin Çevresi:
+     Çevre = 4 x Kenar

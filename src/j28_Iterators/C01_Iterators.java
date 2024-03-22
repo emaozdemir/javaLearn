@@ -44,6 +44,7 @@ public class C01_Iterators {
         for (String e:l1){
             e=e+" :-(";
         }
+        //kalici olarak yapamaz!!!
         System.out.println("l1 update sonrasi : "+l1);//[Sema :-), Semra :-), Dogukan :-), Ahmet :-), Halit :-), Tuba :-), Seher :-)]
 
         /*
