@@ -1,6 +1,6 @@
 package j26_Abstract.abstract01;
 
-public class Crv extends Honda {
+public class Crv extends Honda {//concrete child class
 
     @Override
     public void motor() {

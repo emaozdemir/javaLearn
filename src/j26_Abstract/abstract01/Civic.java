@@ -1,12 +1,13 @@
 package j26_Abstract.abstract01;
 
-public class Civic extends Lastik{//concrete child class. (grand parenttan gelecek)
+public class Civic extends Lastik {//concrete child class. (grand parenttan gelecek)
     /*
   extends Honda yazılarak Honda Class'a concrete bir Civic class tanımlandı
   java CTE verdi
   çözüm:
-  a) Unımplemented (uyarlanmamış) method implement edilmeli
-  b)parent Honda class'dan abstarct keyword kaldırılmalı
+  ya
+  a) Unımplemented (uyarlanmamış) method implement edilmeli ya
+  b)parent Honda class'dan abstarct keyword kaldırılmalı ya da
   c)concrete olan child Civic class abstract tanımlanmalı
 */
 
@@ -36,7 +37,7 @@ public class Civic extends Lastik{//concrete child class. (grand parenttan gelec
         System.out.println("18 inc lastik yeterli");
     }
 
-    //polymorphizim-> obj cok biçimlilik(farkli data typr ve farkli const)
+    //polymorphizim-> obj cok biçimlilik(farkli data type ve farkli const)
 //    Civic obj=new Civic();//civic concrete child class data type
 //    //Honda obj2=new Honda();// obje olusturamayız böyle
 //    Honda obj2=new Civic();// //honda abs class data type obj

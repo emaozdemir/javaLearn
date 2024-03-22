@@ -8,11 +8,13 @@ public abstract class Honda {//abs. grand parent class
         System.out.println("honda concrete meth call edild");
     }
 
-    abstract void koltuk();//abs method-> bodysiz implement zorunlu
+    abstract void koltuk();//abs method-> bodysiz implement zorunlu. acc.modifier default şuan
 
     abstract void kapi();//abs method-> bodysiz implement zorunlu
-//abs. classta concrete variable tanimlanir mi?->evet!
-    String name="Ahmet bey";
+
+    //abs. classta concrete variable tanimlanir mi?->evet!
+    String name = "Ahmet bey";
+
     // abs. class'da abs variable tanımlanır mı? -> nayır nolamazzz
 // abstract String str="javvaNUR";
 // final void finalMethod();// final body'siz meth tanımlanamaz

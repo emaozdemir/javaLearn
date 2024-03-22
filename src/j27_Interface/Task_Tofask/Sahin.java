@@ -1,6 +1,6 @@
 package j27_Interface.Task_Tofask;
 
-public class Sahin extends  Tofask implements DisDonanim,IcDonanim,Lastik {
+public class Sahin extends Tofask implements DisDonanim, IcDonanim, Lastik {
     @Override
     public void kapi() {
         System.out.println("4 KAPİ sedan");

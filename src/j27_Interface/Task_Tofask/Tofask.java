@@ -3,7 +3,7 @@ package j27_Interface.Task_Tofask;
 public abstract class Tofask {//abs parent class
     public abstract void motor();//abs. meth
     public abstract void yakit();//abs. meth
-    public  void sunroof(){//concrete meth
+    public  void sunroof(){//concrete meth->somut class demek
         System.out.println("soguk havada sunroff usutur");
     }
 }

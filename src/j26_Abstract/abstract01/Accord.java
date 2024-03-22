@@ -1,6 +1,7 @@
 package j26_Abstract.abstract01;
 
 public class Accord extends Honda {//concrete child class
+
     @Override
     public void motor() {
         System.out.println("2.0 motor ok.");
