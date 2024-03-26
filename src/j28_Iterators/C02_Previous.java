@@ -7,7 +7,7 @@ import java.util.ListIterator;
 
 public class C02_Previous {
     public static void main(String[] args) {
-        List<String> l1 = new ArrayList<>(Arrays.asList("Trileçe", "KazanDibi", "HavucDilimi", "CennetÇamuru", "Künefix", "Bal-Gaymahhh", "Kerebiç"));
+        List<String> l1 = new ArrayList<>(Arrays.asList("Trilece", "KazanDibi", "HavucDilimi", "CennetCamuru", "Künefix", "Bal-Gaymahhh", "Kerebic"));
         System.out.println("l1 ilk hali  = "+l1);
 
         System.out.println("*** task 01 ***");
@@ -23,7 +23,7 @@ public class C02_Previous {
 
         System.out.println("*** task 02 ***");
         // Task02-> l1 son elemanını :-) ile update edip print eden code create ediniz.
-        ListIterator<String> it2= l1.listIterator();//1.step
+        ListIterator<String> it2= l1.listIterator();//1.step// yeni bir ListIterator<String> olusturuyoruz yoksa yukardakinin devamı gibi olur ve while girmez
         //1.yol
 //        while (it2.hasNext()){//2.step
 //            it2.next();
@@ -37,7 +37,7 @@ public class C02_Previous {
                 it2.set(it2.next()+" :-)");//itertorda return edilen eleman set edildi
             }
         }
-        System.out.println("L1 update sonrasi : "+l1);
+        System.out.println("L1 update sonrasi : "+l1);//Trilece, KazanDibi, HavucDilimi, CennetCamuru, Künefix, Bal-Gaymahhh, Kerebic :-)]
 
     }
 }

@@ -103,6 +103,7 @@ MUTLAKA KESİNLİKLE hasNext() ve next();method'lari calistirilarak cursor(point
         }
         System.out.println();
         System.out.println("*** Task 05 ***");
+
         //Task05-> l1 her bir elemanlarını silip  print eden code create ediniz.
         Iterator<String> it2=l1.iterator();
         while (it2.hasNext()){
@@ -119,7 +120,7 @@ MUTLAKA KESİNLİKLE hasNext() ve next();method'lari calistirilarak cursor(point
         System.out.println("ListIterator oncesi l2 : "+l2);
         ListIterator<String> lit1=l2.listIterator();//1.step
         while (lit1.hasNext()){//2.step
-            lit1.set(lit1.next()+" :-)");
+            lit1.set(lit1.next()+" :-)");//CONCATLA
         }
         System.out.println("ListIterator sonrasi l2 : "+l2);//[javaCAN :-), javvaNUR :-), javaNAZZZ :-), javaSU :-), javaHAN :-), javaZADE :-), javaTAR :-), javaLAZIM :-)]
 

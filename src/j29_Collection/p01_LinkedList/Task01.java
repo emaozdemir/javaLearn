@@ -18,5 +18,7 @@ public class Task01 {
         System.out.println("sileceğin elemani gir");
         String isim = scan.nextLine();
         System.out.println(list.remove(isim) ? "Agam eleman halledildi" : "Agam aradığınız kişiye ulaşılamadı");
+
+        //remove boolean donus yapar aynı zamanda
     }
 }
