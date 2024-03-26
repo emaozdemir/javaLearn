@@ -36,9 +36,25 @@ public class Find_numbers_of_words {
 
     static HashMap<String,Integer> kelimeListesi = new HashMap<>();
     public static void main(String[] args) {
-
-
-
+Scanner scan=new Scanner(System.in);
+        System.out.println("Kelime analizi yapilacak olan metni giriniz");
+        String metin= scan.nextLine();
+        String[] cumleler=metin.split("\\.");
+        for (int i = 0; i < cumleler.length; i++) {
+            String[] kelimeler=cumleler[i].trim().split(" ");
+            for (int j = 0; j < kelimeler.length; j++) {
+                if (kelimeListesi.get(kelimeler[j])==null){
+                    kelimeListesi.put(kelimeler[j],1 );
+                }else {
+                    int sayi=kelimeListesi.get(kelimeler[j]);
+                    kelimeListesi.put(kelimeler[j],sayi+1 );
+                }
+            }
+        }
+        System.out.println("kelimeListesi = " + kelimeListesi);
+        for (String each:kelimeListesi.keySet()){
+            System.out.println(each+" : "+kelimeListesi.get(each));
+        }
     }
 
 }
